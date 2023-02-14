@@ -261,8 +261,10 @@ namespace GameControlEditor {
         DrawHelpIcon("Inverts the Camera X Axis in:\n-Free camera");
         UIWidgets::PaddedEnhancementCheckbox("Invert Camera Y Axis", "gInvertYAxis");
         DrawHelpIcon("Inverts the Camera Y Axis in:\n-Free camera");
-        UIWidgets::EnhancementSliderFloat("Third-Person Sensitivity: %d %%", "##ThirdPersonSensitivity",
-                                            "gThirdPersonCameraSensitivity", 0.01f, 5.0f, "", 1.0f, true, true);
++       UIWidgets::EnhancementSliderFloat("Third-Person Horizontal Sensitivity: %d %%", "##ThirdPersonSensitivity Horizontal",
++                                            "gThirdPersonCameraSensitivityX", 0.01f, 5.0f, "", 1.0f, true, true);
++       UIWidgets::EnhancementSliderFloat("Third-Person Vertical Sensitivity: %d %%", "##ThirdPersonSensitivity Vertical",
++                                          "gThirdPersonCameraSensitivityY", 0.01f, 5.0f, "", 1.0f, true, true);
         UIWidgets::EnhancementSliderInt("Camera Distance: %d", "##CamDist",
                                         "gFreeCameraDistMax", 100, 900, "", 185, true);
         UIWidgets::EnhancementSliderInt("Camera Transition Speed: %d", "##CamTranSpeed",
